@@ -45,10 +45,10 @@ I walk backwards out of the kitchen into the hallway; the rover follows the whol
 
 | | |
 |---|---|
-| **1. Lock on, drive straight.** Target centred in the doorway: `TURN 0.00`, `SPEED` 0.25 -> 0.50 -> 0.25. | ![phase 1](docs/phase1.gif) |
-| **2. Target moves off-centre.** The rover steers back toward the person: `TURN +0.20 -> +0.14 -> 0.00`. | ![phase 2](docs/phase2.gif) |
-| **3. Reaching the doorway.** The person moves back into the hall; the heading is corrected the other way (`TURN -0.15`). | ![phase 3](docs/phase3.gif) |
-| **4. Into the hallway.** Following through the door, still correcting (`TURN -0.17`). | ![phase 4](docs/phase4.gif) |
+| **1. Lock on, drive straight.** Target centred in the doorway. | ![phase 1](docs/phase1.gif) |
+| **2. Target moves off-centre.** The rover steers back toward the person. | ![phase 2](docs/phase2.gif) |
+| **3. Reaching the doorway.** The person moves back into the hall; the heading is corrected the other way. | ![phase 3](docs/phase3.gif) |
+| **4. Into the hallway.** Following through the door, still correcting. | ![phase 4](docs/phase4.gif) |
 
 ## Stopping safely
 
