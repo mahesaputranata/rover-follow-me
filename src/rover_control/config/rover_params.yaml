@@ -1,0 +1,27 @@
+# ================================================================
+#  Rover parameter file
+#  Fill in physical measurements after build is complete.
+#  All units: meters, seconds, radians.
+# ================================================================
+
+rover:
+  track_width_m: 0.20        
+  wheel_diameter_m: 0.065   # known from ESP32 firmware
+  ticks_per_rev: 1440       # known from ESP32 firmware
+
+odometry:
+  publish_rate_hz: 50       # matches ESP32 ODOM stream rate
+  initial_x: 0.0
+  initial_y: 0.0
+  initial_psi: 0.0          # radians
+
+lqr:
+  v0: 0.2                   # operating point velocity (m/s)
+  # Q: state cost weights [X, Y, psi, v, r]
+  Q_diag: [1.0, 1.0, 2.0, 0.1, 0.1]
+  # R: input cost weights [v_left, v_right]
+  R_diag: [0.01, 0.01]
+
+serial:
+  port: "/dev/ttyUSB0"      # adjust to your Pi's UART port
+  baud_rate: 115200

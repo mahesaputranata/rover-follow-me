@@ -1,0 +1,24 @@
+build/
+install/
+log/
+.cache/
+__pycache__/
+*.pyc
+.env
+
+# virtual environments
+myenv/
+venv/
+.venv/
+
+# model weights: yolov8n.pt downloads automatically, door model via tools/download_door_model.py
+*.pt
+
+# personal data: face embeddings, collected images, runtime memory and logs
+*.npy
+door_dataset/
+data/
+logs/
+
+# original full-resolution recordings (README uses the cropped docs/phase*.gif)
+docs/GIF_*.gif
